@@ -2,43 +2,56 @@
 
 ## Rails
 ### Models
-* Notebook
-* Tag
-* Tagging
+* TaskType
 
 ### Controllers
-* Api::NotebooksController (create, destroy, index, show, update)
+* Api::TaskTypesController (create, index, show)
+* Api::RewardsController (create, destroy, index, show, update)
 
 ### Views
-* notebooks/index.json.jbuilder
-* notebooks/show.json.jbuilder
-* tags/show.json.jbuilder
+* tasktypes/index.json.jbuilder
+* tasktypes/show.json.jbuilder
+* rewards/index.json.jbuilder
+* rewards/show.json.jbuilder
 
 ## Flux
 ### Views (React Components)
-* NotebooksIndex
-  - NotebookIndexItem
-* NotebookForm
+* TaskTypesIndex
+  - TaskTypeIndexItem
+* TaskTypeForm
 * SearchIndex
 
+* RewardsIndex
+  - RewardsIndexItem
+* RewardForm
+
 ### Stores
-* Notebook
+* TaskType
+* Reward
 
 ### Actions
-* ApiActions.receiveAllNotebooks -> triggered by ApiUtil
-* ApiActions.receiveSingleNotebook
-* ApiActions.deleteNotebook
-* NotebookActions.fetchAllNotebooks -> triggers ApiUtil
-* NotebookActions.fetchSingleNotebook
-* NotebookActions.createNotebook
-* NotebookActions.editNotebook
-* NotebookActions.destroyNotebook
+* ApiActions.receiveAllTaskTypes -> triggered by ApiUtil
+* ApiActions.receiveSingleTaskType
+* TaskTypeActions.fetchAllTaskTypes -> triggers ApiUtil
+* TaskTypeActions.fetchSingleTaskType
+
+* ApiActions.receiveAllRewards -> triggered by ApiUtil
+* ApiActions.receiveSingleReward
+* ApiActions.deleteReward
+* RewardActions.fetchAllRewards -> triggers ApiUtil
+* RewardActions.fetchSingleReward
+* RewardActions.createReward
+* RewardActions.editReward
+* RewardActions.destroyReward
 
 ### ApiUtil
-* ApiUtil.fetchAllNotebooks
-* ApiUtil.fetchSingleNotebook
-* ApiUtil.createNotebook
-* ApiUtil.editNotebook
-* ApiUtil.destroyNotebook
+* ApiUtil.fetchAllTaskTypes
+* ApiUtil.fetchSingleTaskType
+
+* ApiUtil.fetchAllRewards
+* ApiUtil.fetchSingleReward
+* ApiUtil.createReward
+* ApiUtil.editReward
+* ApiUtil.destroyReward
 
 ## Gems/Libraries

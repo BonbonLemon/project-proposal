@@ -3,18 +3,24 @@
 ## Rails
 ### Models
 * User
-* Note
+* Task
+* Avatar
+* Rewards
 
 ### Controllers
 * UsersController (create, new)
 * SessionsController (create, new, destroy)
-* Api::NotesController (create, destroy, index, show, update)
+* Api::TasksController (create, destroy, index, show, update)
+* Api::AvatarsController (create, show)
 
 ### Views
 * users/new.html.erb
 * session/new.html.erb
-* notes/index.json.jbuilder
-* notes/show.json.jbuilder
+* tasks/index.json.jbuilder
+* tasks/show.json.jbuilder
+* avatars/show.json.jbuilder
+* rewards/index.json.jbuilder
+* rewards/show.json.jbuilder
 
 ## Flux
 ### Views (React Components)

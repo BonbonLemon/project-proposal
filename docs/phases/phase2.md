@@ -9,30 +9,29 @@
 
 ## Flux
 ### Views (React Components)
-* NotesIndex
-  - NotesIndexItem
-* NoteForm
+* TasksIndex
+  - TasksIndexItem
+* TaskForm
 
 ### Stores
-* Note
+* Task
 
 ### Actions
-* ApiActions.receiveAllNotes -> triggered by ApiUtil
-* ApiActions.receiveSingleNote
-* ApiActions.deleteNote
-* NoteActions.fetchAllNotes -> triggers ApiUtil
-* NoteActions.fetchSingleNote 
-* NoteActions.createNote
-* NoteActions.editNote 
-* NoteActions.destroyNote
+* ApiActions.receiveAllTasks -> triggered by ApiUtil
+* ApiActions.receiveSingleTask
+* ApiActions.deleteTask
+* TaskActions.fetchAllTasks -> triggers ApiUtil
+* TaskActions.fetchSingleTask
+* TaskActions.createTask
+* TaskActions.editTask
+* TaskActions.destroyTask
 
 ### ApiUtil
-* ApiUtil.fetchAllNotes
-* ApiUtil.fetchSingleNote
-* ApiUtil.createNote
-* ApiUtil.editNote
-* ApiUtil.destroyNote
+* ApiUtil.fetchAllTasks
+* ApiUtil.fetchSingleTask
+* ApiUtil.createTask
+* ApiUtil.editTask
+* ApiUtil.destroyTask
 
 ## Gems/Libraries
 * Flux Dispatcher (npm)
-* Twitter Bootstrap
